@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Campeonato</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Campeonato de Futebol Amador</h1>
+    </header>
+
+    <section>
+        <div id="entrada">
+            <select name="times" id="times">
+                <option value="São Paulo">São Paulo</option>
+                <option value="Palmeiras">Palmeiras</option>
+                <option value="Santos">Santos</option>
+                <option value="Corinthians">Corinthians</option>
+            </select>
+            <input type="button" value="Inserir" onclick="inserir()"> 
+            <input type="button" value="Gerar" onclick="gerar()">
+            <textarea name="tArea" id="tArea" cols="30" rows="10"></textarea>
+        </div>
+            
+        <div id="saida">
+        </div>    
+    </section>
+
+
+
+    <script src="script.js"></script>
+</body>
+</html>

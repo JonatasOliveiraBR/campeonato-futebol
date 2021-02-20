@@ -1,0 +1,30 @@
+body{
+    width: 600px;
+    height: 600px;
+    margin: auto;
+    border: 1px solid;
+    text-align: center;
+}
+
+#entrada{
+    width: 250px;
+    height: auto;
+    float: left;
+    margin: 10px;
+}
+
+#saida{
+    width: 250px;
+    height: auto;
+    float: right;
+    text-align: left;
+}
+
+#tArea{
+    margin-top: 20px;
+    height: 200px;
+}
+
+input{
+    margin-left: 15px;
+}
