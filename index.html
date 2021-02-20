@@ -13,12 +13,18 @@
     </header>
 
     <section>
+
+        <div id="cadastro">
+            <label for="lblCadastro">Cadastrar time:</label>
+            <input type="text" name="txtCadastro" id="txtCadastro" onfocus="this.value='';">
+            <button type="submit" id="btnCadastrar" onclick="cadastrar()">Cadastrar</button>
+
+        </div>
+
+
         <div id="entrada">
             <select name="times" id="times">
-                <option value="São Paulo">São Paulo</option>
-                <option value="Palmeiras">Palmeiras</option>
-                <option value="Santos">Santos</option>
-                <option value="Corinthians">Corinthians</option>
+                <option value=""></option>
             </select>
             <input type="button" value="Inserir" onclick="inserir()"> 
             <input type="button" value="Gerar" onclick="gerar()">

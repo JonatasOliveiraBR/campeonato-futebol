@@ -1,6 +1,28 @@
 let timeVetor = []
    
 
+function limpar(){
+    document.getElementById('txtCadastro').value = ''
+    document.getElementById('times').value = ''
+}
+
+
+function cadastrar(){
+    let cadastro = document.getElementById('txtCadastro').value
+    let opcao = document.createElement('option')
+    let times = document.getElementById('times')
+    opcao.setAttribute('value',cadastro)
+    opcao.innerText = cadastro
+    times.appendChild(opcao)
+
+    limpar() 
+}
+
+
+
+
+
+
 function inserir(){
     let times = document.getElementById('times').value
     let tArea = document.getElementById('tArea')
@@ -8,6 +30,7 @@ function inserir(){
     if((timeVetor.indexOf(times))==-1){
         timeVetor.push(times)
         tArea.innerHTML += `${times}\n`
+        limpar()
     }else{
         window.alert('Time já incluido!')
     }

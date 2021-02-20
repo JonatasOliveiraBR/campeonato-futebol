@@ -6,18 +6,32 @@ body{
     text-align: center;
 }
 
+#cadastro{
+    width: 555px;
+    height: 40px; 
+    border: 1px solid;
+    margin: 10px;
+    padding: 10px;
+    text-align: left;
+}
+
 #entrada{
     width: 250px;
-    height: auto;
+    height: 300px;
     float: left;
     margin: 10px;
+    padding: 10px;
+    border: 1px solid;
 }
 
 #saida{
     width: 250px;
-    height: auto;
+    height: 300px;
     float: right;
     text-align: left;
+    border: 1px solid;
+    margin: 10px;
+    padding: 10px;
 }
 
 #tArea{
