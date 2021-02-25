@@ -17,26 +17,24 @@ body{
 
 #entrada{
     width: 250px;
-    height: 300px;
+    height: 330px;
     float: left;
     margin: 10px;
-    padding: 10px;
-    border: 1px solid;
 }
 
 #saida{
     width: 250px;
     height: 300px;
     float: right;
-    text-align: left;
+    text-align: center;
     border: 1px solid;
     margin: 10px;
     padding: 10px;
 }
 
-#tArea{
-    margin-top: 20px;
-    height: 200px;
+#sTimes{
+    width: 270px;
+    height: 325px;
 }
 
 input{
@@ -44,5 +42,13 @@ input{
 }
 
 #times{
-    width: 90px;
+    width: 155px;
+}
+
+#btnGerar{
+    margin-top: 5px;
+}
+
+#btnExcluir{
+    margin-top: 5px;
 }

@@ -15,20 +15,20 @@
     <section>
 
         <div id="cadastro">
-            <label for="lblCadastro">Cadastrar time:</label>
+            <label for="lblCadastro">Cadastrar times:</label>
             <input type="text" name="txtCadastro" id="txtCadastro" onfocus="this.value='';">
             <button type="submit" id="btnCadastrar" onclick="cadastrar()">Cadastrar</button>
-
         </div>
 
 
         <div id="entrada">
-            <select name="times" id="times">
-                <option value=""></option>
-            </select>
-            <input type="button" value="Inserir" onclick="inserir()"> 
-            <input type="button" value="Gerar" onclick="gerar()">
-            <textarea name="tArea" id="tArea" cols="30" rows="10"></textarea>
+            <form action="">
+                <select name="sTimes" id="sTimes" size="20">
+                </select>
+
+            </form>
+            <input type="button" id="btnExcluir" value="Excluir Time" onclick="excluir()">
+            <input type="button" value="Gerar Confrontos" onclick="gerar()" id="btnGerar">
         </div>
             
         <div id="saida">
