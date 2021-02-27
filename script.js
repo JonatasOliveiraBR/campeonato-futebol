@@ -3,12 +3,14 @@ let timeVetor = []
 
 function limpar(){
     document.getElementById('txtCadastro').value = '' //realiza a limpeza da caixa texto
+    document.getElementById('saida').innerHTML = ''
 }
 
 
 function cadastrar(){
     let sTimes = document.getElementById('sTimes')
     let time = document.getElementById('txtCadastro').value
+    limpar()
 
     //Verificar se caixa de texto está preenchida
     if(time == ''){
@@ -20,8 +22,11 @@ function cadastrar(){
         opcao.innerText = time 
         sTimes.appendChild(opcao) //linka o option com o select
         
-        sTimes.innerHTML += `${timeVetor[timeVetor.length-1]}\n` 
-    }     
+        sTimes.innerHTML += `${timeVetor[timeVetor.length-1]}\n`
+        time.innerHTML = this.value = ''  
+        limpar()
+    }
+      
 }
 
 
@@ -42,7 +47,6 @@ function excluir(){
 
 function gerar(){
     let saida = document.getElementById('saida')
-    //saida.innerHTML = ''
    
     if(timeVetor.length<2){ 
         alert('[ATENÇÃO] Quantidade insuficiente de times.')
@@ -53,9 +57,8 @@ function gerar(){
                 if(timeVetor[c] != timeVetor[i]){
                     saida.innerHTML += `${timeVetor[c]} x ${timeVetor[i]}<br>`
                 } 
-               saida.innerHTML +=  
-            }
-          
+            } 
+            saida.innerHTML += '<br>'
         }
         timeVetor=[]
         sTimes.innerHTML = ''
